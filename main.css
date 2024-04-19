@@ -157,17 +157,32 @@ body.dark-mode .icon-links a {
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 50px auto;
         text-align: center;
     }
-    .button-links{
+
+    .button-links {
         margin: 0 auto;
+        text-align: center; /* Centraliza o texto */
     }
+
+    /* Adiciona flexbox para centralizar os itens da lista */
+    .button-links ul {
+        display: flex;
+        flex-direction: column; /* Itens em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        padding: 0;
+        list-style: none;
+        color: #000000; /* Remove os marcadores da lista */
+    }
+
     .button-links button {
         max-width: 350px;
-        width: 300px;
-        text-align: center;
-        margin: 0 0px 20px -30px;
+        width: 300px; /* Utiliza toda a largura do elemento pai */
+        height: 50px;
+        margin: 12px auto;
+        color: #000000; /* Centraliza o botão */
     }
 
     .icon-links {
@@ -184,5 +199,4 @@ body.dark-mode .icon-links a {
         height: 150px;
     }
 }
-
 
