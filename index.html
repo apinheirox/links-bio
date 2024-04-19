@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Antônio Pinheiro - Links</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="img-perfil">
+            <img src="./image/img-links.png" alt="">
+        </div>
+        <div class="text-links">
+            <h2>@acpinheirox</h2>
+        </div>
+        <div class="icon-links">
+            <a href="https://www.instagram.com/acpinheirox/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://github.com/apinheirox" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/ant%C3%B4nio-front-end-dev/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div class="button-mode">
+            <input type="checkbox" id="toggle-button" class="theme-checkbox">
+        </div>
+        <div class="button-links">
+            <ul>
+                <li><a href="https://wa.me/5571984652983"><button>Peça um orçamento</button></a></li>
+                <li><a href="#"><button>Veja meu Portfólio</button></a></li>
+                <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-front-end-dev/"><button>Linkedin</button></a></li>
+                <li><a href="https://github.com/apinheirox"><button>GitHub</button></a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <p>Densenvolvido por <a href="" target="_blank">Antônio Pinheiro</a></p>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // Configuração para particles.js
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 50,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#000000" // Cor preta para as partículas
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable_auto": true,
+                        "distance": 100,
+                        "color": "#000000", // Cor preta para as linhas
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+        
+    const toggleButton = document.getElementById('toggle-button');
+    const body = document.body;
+
+    let particles;
+
+    function toggleMode() {
+    body.classList.toggle('dark-mode');
+    
+    const isDarkMode = body.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+        particles.setColor('#FFFFFF');
+    } else {
+        particles.setColor('#000000');
+    }
+    
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+toggleButton.addEventListener('click', toggleMode);
+
+
+const savedMode = localStorage.getItem('darkMode');
+if (savedMode === 'true') {
+    body.classList.add('dark-mode');
+    particles.setColor('#FFFFFF');
+} else {
+    particles.setColor('#000000');
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
