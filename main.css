@@ -181,7 +181,7 @@ body.dark-mode .icon-links a {
         max-width: 350px;
         width: 300px; /* Utiliza toda a largura do elemento pai */
         height: 50px;
-        margin: 12px auto;
+        margin: 6px auto;
         color: #000000; /* Centraliza o botão */
     }
 
@@ -191,14 +191,20 @@ body.dark-mode .icon-links a {
     }
 
     .text-links {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 
     .img-perfil img {
         width: 150px;
         height: 150px;
         margin-bottom: -20px;
+    }
+    .theme-checkbox{
+        margin-bottom: -5px;
+    }
+    .footer-links{
+        margin-top: -12px;
     }
 }
 
