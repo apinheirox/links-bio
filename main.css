@@ -187,17 +187,18 @@ body.dark-mode .icon-links a {
 
     .icon-links {
         font-size: 30px;
+        margin-bottom: -2px;
     }
 
     .text-links {
         font-size: 12px;
-        margin-bottom: 5px;
+        margin-bottom: -5px;
     }
 
     .img-perfil img {
         width: 150px;
         height: 150px;
-        margin-bottom: -20px;
+        margin-bottom: -30px;
     }
 }
 
