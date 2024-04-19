@@ -9,7 +9,7 @@ body, html{
 }
 
 body {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -85,7 +85,7 @@ body.dark-mode .icon-links a {
 .container {
     display: block;
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 20px auto;
     font-family: 'Aron';
 }
 
