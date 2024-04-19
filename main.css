@@ -130,7 +130,7 @@ body.dark-mode .icon-links a {
 }
 
 .button-links button {
-    width: 400px; /* A largura será de 100% do elemento pai */
+    width: 500px; /* A largura será de 100% do elemento pai */
     max-width: 500px; /* A largura máxima será de 500px */
     height: 50px; /* Altura fixa */
     margin: 15px 0;
@@ -192,13 +192,13 @@ body.dark-mode .icon-links a {
 
     .text-links {
         font-size: 12px;
-        margin-bottom: -5px;
+        margin-bottom: 10px;
     }
 
     .img-perfil img {
         width: 150px;
         height: 150px;
-        margin-bottom: -30px;
+        margin-bottom: -20px;
     }
 }
 
